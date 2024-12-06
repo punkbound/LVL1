@@ -1,0 +1,181 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+}
+.bgimg-on {
+  background-image: url("images/Screenshot\ 2024-11-04\ 134605.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* o not repeat the image */
+  background-size: cover;
+}
+.bgimg-off {
+  background-image: url("images/night.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* o not repeat the image */
+  background-size: cover;
+}
+
+.bgimg-win {
+  background-image: url("images/image.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* o not repeat the image */
+  background-size: cover;
+}
+
+.arrow {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  width: 20%;
+  height: 20%;
+  opacity: 0.95;
+}
+
+/* build your layout */
+.side {
+  height: 100%;
+  width: 20%;
+  display: flex;
+}
+
+.col {
+  height: 100%;
+  width: calc(100% / 3);
+}
+.middle {
+  height: 100%;
+  width: 30%;
+}
+
+/* control your content */
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.book {
+  position: relative;
+  top: calc(367%);
+  left: calc(50%);
+}
+.light {
+  position: relative;
+  top: calc(400%);
+  left: calc(50%);
+}
+.bookpic {
+  max-height: 10%;
+  max-width: 40%;
+}
+
+.lightpic {
+  max-height: 10%;
+  max-width: 55%;
+}
+
+img {
+  max-height: 55%;
+  max-width: 55%;
+}
+.hintpic {
+  max-height: 20%;
+  max-width: 45%;
+}
+
+.lockpic {
+  max-height: 10%;
+  max-width: 55%;
+}
+.biglock {
+  max-height: 100%;
+  max-width: 100%;
+}
+.hint {
+  position: relative;
+  top: calc(0%);
+  left: calc(50%);
+}
+.lock {
+  position: relative;
+  top: calc(500%);
+  left: calc(45%);
+}
+.clickable {
+  filter: brightness(0%) drop-shadow(2px 8px 3px);
+}
+.clickable:hover {
+  cursor: pointer;
+  filter: brightness(20%) drop-shadow(2px 8px 3px);
+}
+.clickable:active {
+  filter: drop-shadow(0px 0px 10px);
+  transform: scale(0.98);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  opacity: 0.95;
+}
+.close {
+  color: #aaaaaa;
+  position: fixed;
+  top: 25%;
+  right: 68%;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contain {
+  display: flex;
+  height: 50%;
+  width: 50%;
+}
+.half {
+  display: block;
+  height: 100%;
+  width: 50%;
+}
+.number {
+  display: flex;
+  height: 25%;
+  width: 50%;
+}
+.translucent {
+  opacity: 0.1%;
+}
+/* colors */
+.black {
+  background-color: #000000;
+}
+.pink {
+  background-color: #eb5674;
+}
+.yellow {
+  background-color: #fbee40;
+}
+.orange {
+  background-color: #fd5632;
+}
+.grey {
+  background-color: #d3d3d3;
+}
+.dark-grey {
+  background-color: #a9a9a9;
+}
