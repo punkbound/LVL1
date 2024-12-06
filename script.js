@@ -173,5 +173,5 @@ function win() {
   document.getElementById("swi").style.display = "none";
 }
 function nextEscapeRoomPage() {
-  window.location.href = "https://kgxtkj.csb.app/";
+  window.location.href = "https://iya-gilly.github.io/aniyasroom/";
 }
